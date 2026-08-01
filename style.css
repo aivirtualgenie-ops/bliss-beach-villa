@@ -576,3 +576,415 @@ padding-left:18px;
 margin-bottom:12px;
 
 }
+/* ===================================
+BEACH STORY
+=================================== */
+
+.beach-story{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:80px;
+
+align-items:center;
+
+background:#fff;
+
+}
+
+.beach-image img{
+
+width:100%;
+
+height:650px;
+
+object-fit:cover;
+
+border-radius:28px;
+
+box-shadow:var(--shadow);
+
+transition:.5s;
+
+}
+
+.beach-image img:hover{
+
+transform:scale(1.03);
+
+}
+
+.beach-text p{
+
+margin-bottom:22px;
+
+}
+
+
+/* ===================================
+WHY US
+=================================== */
+
+.why-us{
+
+background:#f7f5ef;
+
+}
+
+.why-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+.why-card{
+
+background:white;
+
+padding:45px;
+
+border-radius:24px;
+
+text-align:center;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+font-size:18px;
+
+}
+
+.why-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.why-card h3{
+
+margin:20px 0 12px;
+
+}
+
+
+/* ===================================
+EXPERIENCES
+=================================== */
+
+.experience-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+.experience-card{
+
+background:white;
+
+padding:60px 35px;
+
+border-radius:24px;
+
+text-align:center;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+font-size:24px;
+
+}
+
+.experience-card:hover{
+
+background:var(--green);
+
+color:white;
+
+transform:translateY(-8px);
+
+}
+
+.experience-card:hover h3{
+
+color:white;
+
+}
+
+
+/* ===================================
+GALLERY
+=================================== */
+
+.gallery{
+
+background:white;
+
+}
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:18px;
+
+}
+
+.gallery-grid img{
+
+width:100%;
+
+height:300px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+transition:.45s;
+
+cursor:pointer;
+
+}
+
+.gallery-grid img:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 20px 40px rgba(0,0,0,.18);
+
+}
+
+
+/* ===================================
+REVIEWS
+=================================== */
+
+.reviews{
+
+background:#f7f5ef;
+
+}
+
+.review-container{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:28px;
+
+margin-top:40px;
+
+}
+
+.review-card{
+
+background:white;
+
+padding:40px;
+
+border-radius:24px;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+}
+
+.review-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.review-card span{
+
+display:block;
+
+margin-top:20px;
+
+color:var(--gold);
+
+font-weight:600;
+
+}
+
+.review-button{
+
+display:inline-block;
+
+margin-top:50px;
+
+padding:18px 40px;
+
+background:var(--green);
+
+color:white;
+
+border-radius:50px;
+
+}
+
+
+/* ===================================
+LOCATION
+=================================== */
+
+.location{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:70px;
+
+align-items:center;
+
+background:white;
+
+}
+
+.location img{
+
+width:100%;
+
+height:500px;
+
+object-fit:cover;
+
+border-radius:25px;
+
+box-shadow:var(--shadow);
+
+}
+
+.location ul{
+
+margin-top:25px;
+
+padding-left:20px;
+
+}
+
+.location li{
+
+margin-bottom:15px;
+
+}
+
+
+/* ===================================
+CONTACT
+=================================== */
+
+.contact{
+
+text-align:center;
+
+background:#f7f5ef;
+
+}
+
+.contact-box{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+margin-top:40px;
+
+}
+
+
+/* ===================================
+FOOTER
+=================================== */
+
+footer{
+
+background:#14362b;
+
+color:white;
+
+text-align:center;
+
+padding:80px 20px;
+
+}
+
+footer h2{
+
+color:white;
+
+margin-bottom:20px;
+
+}
+
+footer p{
+
+color:#ddd;
+
+margin-bottom:12px;
+
+}
+
+
+/* ===================================
+ANIMATIONS
+=================================== */
+
+img{
+
+transition:.45s;
+
+}
+
+.primary-btn,
+.book-btn{
+
+transition:.35s;
+
+}
+
+section{
+
+animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
