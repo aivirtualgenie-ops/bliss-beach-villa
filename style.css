@@ -988,3 +988,376 @@ transform:translateY(0);
 }
 
 }
+/* ===================================
+MOBILE RESPONSIVE
+=================================== */
+
+@media(max-width:1100px){
+
+.hero h1{
+
+font-size:58px;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.room-grid,
+.intro,
+.location,
+.beach-story{
+
+grid-template-columns:1fr;
+
+}
+
+.why-grid,
+.experience-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.review-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+
+padding:20px 25px;
+
+}
+
+.nav-links{
+
+display:none;
+
+}
+
+.book-btn{
+
+display:none;
+
+}
+
+.hero{
+
+padding:120px 25px 80px;
+
+height:auto;
+
+min-height:100vh;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero-text{
+
+font-size:17px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.secondary-btn{
+
+margin-left:0;
+
+}
+
+section{
+
+padding:80px 25px;
+
+}
+
+.highlights{
+
+grid-template-columns:1fr;
+
+margin-top:40px;
+
+}
+
+.highlight{
+
+padding:30px;
+
+}
+
+.room-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery-grid img{
+
+height:260px;
+
+}
+
+.why-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.experience-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.location{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-box{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.location img{
+
+height:350px;
+
+}
+
+.beach-image img{
+
+height:420px;
+
+}
+
+.intro-image img{
+
+height:420px;
+
+object-fit:cover;
+
+}
+
+h2{
+
+font-size:36px;
+
+}
+
+}
+
+
+/* ===================================
+FLOATING BUTTONS
+=================================== */
+
+.floating-buttons{
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:14px;
+
+z-index:999;
+
+}
+
+.float-btn{
+
+width:62px;
+
+height:62px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:28px;
+
+background:var(--green);
+
+color:white;
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+transition:.35s;
+
+}
+
+.float-btn:hover{
+
+transform:scale(1.1);
+
+background:var(--green-dark);
+
+}
+
+
+/* ===================================
+IMAGE HOVER
+=================================== */
+
+.gallery-grid img,
+.room-card img,
+.intro img,
+.beach-image img{
+
+filter:saturate(108%) contrast(104%);
+
+}
+
+.gallery-grid img:hover,
+.room-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+
+/* ===================================
+SECTION DIVIDER
+=================================== */
+
+section{
+
+position:relative;
+
+}
+
+section::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-1px;
+
+width:100%;
+
+height:60px;
+
+background:linear-gradient(to bottom,
+transparent,
+rgba(255,255,255,.25));
+
+pointer-events:none;
+
+}
+
+
+/* ===================================
+SCROLLBAR
+=================================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#f3f3f3;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:var(--green);
+
+border-radius:20px;
+
+}
+
+
+/* ===================================
+SELECTION
+=================================== */
+
+::selection{
+
+background:var(--gold);
+
+color:white;
+
+}
+
+
+/* ===================================
+SMOOTH FADE
+=================================== */
+
+.hero,
+section,
+footer{
+
+animation:fadeIn .8s ease;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+   }
