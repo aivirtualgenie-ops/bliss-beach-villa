@@ -199,3 +199,20 @@ if (roomSlides.length > 0) {
     }, 4000);
 
 }
+document.querySelectorAll('.room-image-slider').forEach(slider => {
+
+    const slides = slider.querySelectorAll('.room-slide');
+
+    let current = 0;
+
+    setInterval(() => {
+
+        slides[current].classList.remove('active');
+
+        current = (current + 1) % slides.length;
+
+        slides[current].classList.add('active');
+
+    }, 3500);
+
+});
