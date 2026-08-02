@@ -182,3 +182,20 @@ hero.style.transform="translateY(0)";
 },300);
 
 });
+const roomSlides = document.querySelectorAll(".room-slide");
+
+if (roomSlides.length > 0) {
+
+    let currentSlide = 0;
+
+    setInterval(() => {
+
+        roomSlides[currentSlide].classList.remove("active");
+
+        currentSlide = (currentSlide + 1) % roomSlides.length;
+
+        roomSlides[currentSlide].classList.add("active");
+
+    }, 4000);
+
+}
